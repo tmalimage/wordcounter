@@ -37,7 +37,7 @@ Key conventions:
 
 ### Site URL is load-bearing
 
-`SITE_URL` in `src/lib/constants.ts` (`https://wordcounter-sandy-pi.vercel.app`) is consumed by:
+`SITE_URL` in `src/lib/constants.ts` (`https://wordcounter-weld.vercel.app`) is consumed by:
 
 - `src/app/layout.tsx` — `metadataBase`, canonical, OG, Twitter card, `alternates` hreflang
 - `src/app/page.tsx` — every node in the JSON-LD `@graph` (WebSite, Organization, WebApplication, BreadcrumbList, HowTo, FAQPage)

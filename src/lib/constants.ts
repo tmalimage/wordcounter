@@ -1,6 +1,6 @@
 import type { PlatformLimit } from "@/types/textStats";
 
-export const SITE_URL = "https://wordcounter-sandy-pi.vercel.app";
+export const SITE_URL = "https://wordcounter-weld.vercel.app";
 export const SITE_NAME = "Free Word Counter";
 export const SITE_SHORT_NAME = "Word Counter";
 export const SITE_TAGLINE =
