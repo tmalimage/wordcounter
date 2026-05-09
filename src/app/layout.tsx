@@ -107,7 +107,7 @@ export const metadata: Metadata = {
   },
   verification: {
     // Replace these with real verification tokens when available.
-    google: "",
+    google: "4aMJxdu_au00FWk3v0-ViVpSTGxnQ-hix34bwMbkdDo",
     yandex: "",
     other: {
       "msvalidate.01": "",
