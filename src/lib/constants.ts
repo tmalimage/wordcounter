@@ -2,6 +2,62 @@ import type { PlatformLimit } from "@/types/textStats";
 
 export const SITE_URL = "https://wordcounter-sandy-pi.vercel.app";
 export const SITE_NAME = "Free Word Counter";
+export const SITE_SHORT_NAME = "Word Counter";
+export const SITE_TAGLINE =
+  "Count words, characters, sentences, paragraphs, reading time, keyword density and readability — instantly, in your browser.";
+export const SITE_LOCALE = "en_US";
+export const SITE_LANGUAGE = "en";
+export const SITE_AUTHOR = "Free Word Counter";
+export const SITE_PUBLISHER = "Free Word Counter";
+export const TWITTER_HANDLE = "@wordcounter";
+
+export const SEO_KEYWORDS = [
+  "word counter",
+  "free word counter",
+  "online word counter",
+  "word counter online",
+  "word count tool",
+  "character counter",
+  "character count tool",
+  "letter counter",
+  "sentence counter",
+  "paragraph counter",
+  "syllable counter",
+  "line counter",
+  "words per minute",
+  "wpm calculator",
+  "reading time calculator",
+  "speaking time calculator",
+  "speech time estimator",
+  "essay word counter",
+  "blog word counter",
+  "twitter character counter",
+  "tweet character counter",
+  "x post character limit",
+  "instagram caption length",
+  "linkedin post length",
+  "youtube title length",
+  "meta description length",
+  "sms character counter",
+  "seo word counter",
+  "keyword density checker",
+  "keyword density tool",
+  "readability score",
+  "flesch reading ease",
+  "flesch kincaid grade level",
+  "gunning fog index",
+  "smog index",
+  "automated readability index",
+  "coleman liau index",
+  "writing tool",
+  "writing assistant",
+  "real time word counter",
+  "live word counter",
+  "free online word counter",
+  "no signup word counter",
+  "privacy first word counter",
+  "browser word counter",
+];
 
 export const DEFAULT_READING_WPM = 200;
 export const DEFAULT_SPEAKING_WPM = 130;
