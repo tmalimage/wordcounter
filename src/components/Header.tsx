@@ -30,15 +30,43 @@ export function Header() {
   }
 
   return (
-    <header className="border-b border-border bg-card/40 backdrop-blur sticky top-0 z-30">
+    <header
+      className="border-b border-border bg-card/40 backdrop-blur sticky top-0 z-30"
+      role="banner"
+    >
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-md focus:bg-blue-600 focus:px-3 focus:py-1 focus:text-white"
+      >
+        Skip to content
+      </a>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-3 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-blue-600 text-white text-sm font-bold">
+        <Link
+          href="/"
+          className="flex items-center gap-2 font-semibold text-lg"
+          aria-label="Free Word Counter — home"
+        >
+          <span
+            className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-blue-600 text-white text-sm font-bold"
+            aria-hidden="true"
+          >
             W
           </span>
           <span>WordCounter</span>
         </Link>
-        <nav className="flex items-center gap-3">
+        <nav aria-label="Primary" className="flex items-center gap-3">
+          <a
+            href="#features"
+            className="text-sm text-muted hover:text-foreground hidden sm:inline"
+          >
+            Features
+          </a>
+          <a
+            href="#how-to-use"
+            className="text-sm text-muted hover:text-foreground hidden sm:inline"
+          >
+            How to use
+          </a>
           <a
             href="#faq"
             className="text-sm text-muted hover:text-foreground hidden sm:inline"
