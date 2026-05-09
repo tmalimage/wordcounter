@@ -54,7 +54,7 @@ SEO is layered across metadata, crawler files, auto-generated images, and JSON-L
 - **Metadata** (`src/app/layout.tsx`): `metadataBase`, `alternates` (canonical + `en-US` / `x-default` hreflang), full OpenGraph, Twitter card, `robots.googleBot` (`max-image-preview: large`, `max-snippet: -1`), `icons`, `manifest`, `appleWebApp`, `verification` placeholders, `formatDetection`, `category`, `classification`.
 - **Crawler files**:
   - `src/app/robots.ts` — explicit allow rules per major bot (Googlebot, Bingbot, DuckDuckBot, Slurp, Applebot, Twitterbot, facebookexternalhit, LinkedInBot)
-  - `src/app/sitemap.ts` — homepage + 6 anchored section URLs (must stay in sync with section IDs in `InfoSection.tsx` and the `HowTo` schema)
+  - `src/app/sitemap.ts` — homepage only (single-page app; hash anchors like `#features` are not valid sitemap entries and were rejected by Google)
   - `src/app/manifest.ts` — PWA manifest with categories and maskable icons
 - **Auto-generated assets** (edge runtime, no `/public` binaries): `opengraph-image.tsx` (1200×630), `twitter-image.tsx`, `icon.tsx` (32×32), `apple-icon.tsx` (180×180). Don't replace with static files in `/public` — Next.js wires these up via the file-based metadata API.
 - **Structured data** (`src/app/page.tsx`): one JSON-LD `<script>` containing a single `@graph` with six nodes — `WebSite` (with `SearchAction`), `Organization`, `WebApplication`+`SoftwareApplication` (dual `@type` with `featureList`, `offer`, `screenshot`), `BreadcrumbList`, `HowTo` (5 steps), `FAQPage`. Add new schemas to the same `@graph`, don't add separate scripts.
